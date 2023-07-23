@@ -1,0 +1,25 @@
+{
+  "name": "pseudocode-syntax-highlighting",
+  "displayName": "Pseudocode-Syntax-Highlighting",
+  "description": "Syntax highlighting for A Level pseudocode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pseudocode",
+      "aliases": ["Pseudocode", "pseudocode"],
+      "extensions": [".pcode"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pseudocode",
+      "scopeName": "source.pcode",
+      "path": "./syntaxes/pseudocode.tmLanguage.json"
+    }]
+  }
+}

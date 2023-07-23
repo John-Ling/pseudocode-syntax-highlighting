@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pseudocode",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#primitives"
+		},
+		{
+			"include": "#literals"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pseudocode",
+				"match": "\\b(AND|OR|NOT|OUTPUT|INPUT|DECLARE|OF|IF|ELSE|THEN|WHILE|FOR|TO|RETURN|RETURNS|FUNCTION|ENDIF|ENDWHILE|NEXT|ENDFUNCTION)\\b"
+			}]
+		},
+		"primitives": {
+			"patterns": [{
+				"name": "entity.name.type.pseudocode",
+				"match": "\\b(INTEGER|STRING|BOOLEAN|REAL)\\b"
+			}]
+		},
+		"literals": {
+			"patterns": [{
+				"name": "entity.name.type.pseudocode",
+				"match": "\\b[0-9|.]+|TRUE|FALSE\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pseudocode",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pseudocode",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.pcode"
+}
