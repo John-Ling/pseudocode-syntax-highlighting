@@ -1,10 +1,15 @@
 {
   "name": "pseudocode-syntax-highlighting",
-  "displayName": "Pseudocode-Syntax-Highlighting",
+  "displayName": "Pseudocode Syntax Highlighting",
   "description": "Syntax highlighting for A Level pseudocode",
+  "publisher": "JohnLing",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/John-Ling/pseudocode-syntax-highlighting.git"
   },
   "categories": [
     "Programming Languages"
